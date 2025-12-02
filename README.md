@@ -1,1 +1,1 @@
-Actual code is in the 'src\test\kotlin' directory
+Actual code is in the 'src/test/kotlin' directory
