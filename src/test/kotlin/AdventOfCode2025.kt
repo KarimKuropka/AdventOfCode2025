@@ -108,4 +108,5 @@ class AdventOfCode2025 {
         }
         println(addedWrongIDs)
     }
+    
 }
