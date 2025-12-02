@@ -92,13 +92,14 @@ class AdventOfCode2025 {
             .map { it.split("-") }
         println(input.joinToString())
 
+        val regex = """(\d+)\1+""".toRegex()
         var addedWrongIDs = 0L
+
         Loop@ for (pair in input) {
             val start = pair[0]
             val end = pair[1]
 
             for (num in start.toLong()..end.toLong()) {
-                val regex = """([0-9]+)\1+""".toRegex()
                 if (regex.matches(num.toString())) {
                     addedWrongIDs += num
                     println(num)
