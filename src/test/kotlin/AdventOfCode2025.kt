@@ -98,8 +98,7 @@ class AdventOfCode2025 {
             val end = pair[1]
 
             for (num in start.toLong()..end.toLong()) {
-                val numString = num.toString()
-                val regex = """([0-9]{1,6})\1+""".toRegex()
+                val regex = """([0-9]+)\1+""".toRegex()
                 if (regex.matches(num.toString())) {
                     addedWrongIDs += num
                     println(num)
