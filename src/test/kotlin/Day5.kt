@@ -25,6 +25,12 @@ class Day5 {
                 }
         }
         println(idCounter)
+
+        /* functional solution from kotlin youtube channel for me to remember :D
+        ingredientIDs.count { id ->
+            ranges.any { range -> id in range}
+        }
+        // so lovely <3   */
     }
 
     @Test
